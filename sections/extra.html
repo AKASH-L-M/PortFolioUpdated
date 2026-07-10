@@ -1,0 +1,35 @@
+<section id="extra" class="code-block">
+      <div class="section-label">// 07 — extracurricular activities</div>
+      <div class="line"><span class="ln">97</span><span class="code"><span class="tp">void</span> <span class="fn">extraActivities</span><span class="pun">() {</span></span></div>
+      <div class="line"><span class="ln">98</span><span class="code">  System<span class="op">.</span>out<span class="op">.</span><span class="fn">println</span><span class="pun">(</span><span class="str">"Workshops and extracurricular activities:"</span><span class="pun">);</span></span></div>
+      <div class="line"><span class="ln">99</span><span class="code"></span></div>
+      <div class="line"><span class="ln">100</span><span class="code">  <button class="toggle-btn" data-panel-target="extra-panel" aria-expanded="false"><span class="arrow">▶</span> showActivities<span style="color:var(--accent-blue)">()</span></button></span></div>
+
+      <div class="panel" id="extra-panel">
+        <div class="panel-pad">
+          <div class="panel-inner">
+            <div style="padding:16px;">
+              <div class="carousel-container">
+                <div class="carousel-label"><span>// extra.activities[]</span><span class="carousel-counter" id="extraCounter">1 / 5</span></div>
+                <div class="carousel-viewport">
+                  <div class="carousel-track-new" id="extraTrack">
+                    <div class="carousel-slide"><img src="img/proj/workshop.jpg"  alt="Workshop activity" loading="lazy"/><div class="carousel-caption">Workshop Activity</div></div>
+                    <div class="carousel-slide"><img src="img/proj/workshop1.jpg" alt="Workshop presentation" loading="lazy"/><div class="carousel-caption">Workshop Presentation</div></div>
+                    <div class="carousel-slide"><img src="img/proj/workshop2.jpg" alt="Workshop participants" loading="lazy"/><div class="carousel-caption">Workshop Participants</div></div>
+                    <div class="carousel-slide"><img src="img/proj/workshop3.jpg" alt="Workshop session" loading="lazy"/><div class="carousel-caption">Workshop Session</div></div>
+                    <div class="carousel-slide"><img src="img/proj/workshop4.jpg" alt="Workshop group photograph" loading="lazy"/><div class="carousel-caption">Workshop Group Photograph</div></div>
+                  </div>
+                  <button class="carousel-btn prev" type="button" data-carousel="extra" data-direction="-1" aria-label="Previous activity">&#8249;</button>
+                  <button class="carousel-btn next" type="button" data-carousel="extra" data-direction="1" aria-label="Next activity">&#8250;</button>
+                </div>
+                <div class="carousel-dots"   id="extraDots"></div>
+                <div class="carousel-thumbs" id="extraThumbs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line" style="margin-top:12px;"><span class="ln">101</span><span class="code">  <span class="kw">return</span><span class="pun">; </span><button class="return-btn" data-nav="home">↩ back to main()</button></span></div>
+      <div class="line"><span class="ln">102</span><span class="code"><span class="pun">}</span></span></div>
+    </section>

@@ -1,0 +1,52 @@
+/* ── EDITOR BAR ── */
+    .editor-bar {
+      position:sticky; top:0; z-index:100; background:#1e1e2e;
+      border-bottom:1px solid var(--border); display:flex; align-items:center;
+      gap:16px; padding:10px 20px; backdrop-filter:blur(8px);
+    }
+    .editor-dots { display:flex; gap:7px; }
+    .editor-dots span { width:12px; height:12px; border-radius:50%; }
+    .dot-red    { background:#ff5f57; }
+    .dot-yellow { background:#febc2e; }
+    .dot-green  { background:#28c840; }
+    .editor-tabs { display:flex; gap:2px; flex:1; overflow-x:auto; scrollbar-width:none; }
+    .editor-tabs::-webkit-scrollbar { display:none; }
+    .tab {
+      padding:5px 14px; font-size:11px; font-family:var(--mono);
+      border-radius:4px 4px 0 0; color:var(--text-dim); cursor:pointer;
+      white-space:nowrap; border-bottom:2px solid transparent; transition:all .2s;
+    }
+    .tab:hover  { color:var(--text-white); background:rgba(255,255,255,.04); }
+    .tab.active { color:var(--accent-cyan); border-bottom-color:var(--accent-cyan); background:rgba(0,229,255,.06); }
+    .editor-name { font-family:var(--display); font-size:10px; color:var(--accent-cyan); letter-spacing:2px; opacity:.7; }
+
+/* ── IDE LAYOUT ── */
+    .ide { display:flex; min-height:100vh; }
+    .sidebar {
+      width:220px; min-width:220px; background:#161622;
+      border-right:1px solid var(--border); padding:20px 0;
+      position:sticky; top:47px; height:calc(100vh - 47px); overflow-y:auto;
+    }
+    .sidebar-title { font-size:10px; letter-spacing:2px; color:var(--text-dim); padding:0 16px 12px; text-transform:uppercase; }
+    .file-item {
+      display:flex; align-items:center; gap:8px; padding:7px 16px;
+      font-size:12px; color:var(--text-dim); cursor:pointer;
+      border-left:2px solid transparent; transition:all .2s;
+    }
+    .file-item:hover  { color:var(--text-white); background:rgba(255,255,255,.04); }
+    .file-item.active { color:var(--accent-cyan); border-left-color:var(--accent-cyan); background:rgba(0,229,255,.06); }
+    .file-item .fdot  { width:6px; height:6px; border-radius:50%; background:var(--accent-green); margin-left:auto; opacity:0; transition:opacity .2s; }
+    .file-item.active .fdot { opacity:1; }
+    .code-area { flex:1; overflow-y:auto; }
+
+/* ── SECTIONS ── */
+    .code-block { min-height:100vh; padding:0 0 80px; border-bottom:1px solid var(--border); }
+    .section-label {
+      font-size:10px; letter-spacing:2px; text-transform:uppercase;
+      color:var(--text-dim); padding:16px 20px 8px var(--gutter-w);
+      border-top:1px solid var(--border); margin-bottom:4px;
+    }
+
+/* ── STATUS BAR ── */
+    .status-bar { position:fixed; bottom:0; left:0; right:0; background:var(--accent-blue); color:#fff; font-family:var(--mono); font-size:11px; padding:4px 16px; display:flex; justify-content:space-between; align-items:center; z-index:200; }
+

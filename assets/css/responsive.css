@@ -1,0 +1,4 @@
+/* ── RESPONSIVE ── */
+    @media (max-width:900px) { .sidebar { display:none; } .hero-grid { grid-template-columns:1fr; } }
+    @media (max-width:600px) { .hero { padding:28px 16px; } .code { font-size:12px; } .ln { width:36px; min-width:36px; } }
+

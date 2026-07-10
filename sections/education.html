@@ -1,0 +1,46 @@
+<section id="education" class="code-block">
+      <div class="section-label">// 02 — educational qualifications</div>
+      <div class="line"><span class="ln">36</span><span class="code"><span class="tp">void</span> <span class="fn">educationalQualifications</span><span class="pun">() {</span></span></div>
+      <div class="line"><span class="ln">37</span><span class="code">  System<span class="op">.</span>out<span class="op">.</span><span class="fn">println</span><span class="pun">(</span><span class="str">"Schooling completed in Moodbidre."</span><span class="pun">);</span></span></div>
+      <div class="line"><span class="ln">38</span><span class="code">  System<span class="op">.</span>out<span class="op">.</span><span class="fn">println</span><span class="pun">(</span><span class="str">"Graduation: NMAM Institute of Technology, Karkala."</span><span class="pun">);</span></span></div>
+      <div class="line"><span class="ln">39</span><span class="code">  System<span class="op">.</span>out<span class="op">.</span><span class="fn">println</span><span class="pun">(</span><span class="str">"B.E. Computer Science — Class of 2023."</span><span class="pun">);</span></span></div>
+      <div class="line"><span class="ln">40</span><span class="code"></span></div>
+      <div class="line"><span class="ln">41</span><span class="code">  <button class="toggle-btn" data-panel-target="edu-panel" aria-expanded="false"><span class="arrow">▶</span> showMyAcademics<span style="color:var(--accent-blue)">()</span></button></span></div>
+
+      <div class="panel" id="edu-panel">
+        <div class="panel-pad">
+          <div class="panel-inner">
+            <table class="edu-table">
+              <thead><tr><th>Certificate</th><th>Institute</th><th>Board</th><th>Year</th><th>Grade</th></tr></thead>
+              <tbody>
+                <tr><td>B.E. (CSE)</td><td>NMAMIT</td><td>VTU, Belgavi</td><td>2019–2023</td><td><span class="grade-badge">9.74 CGPA</span></td></tr>
+                <tr><td>PUC</td><td>Jain PU College</td><td>PU Board</td><td>Mar 2019</td><td><span class="grade-badge">94.67%</span></td></tr>
+                <tr><td>SSLC</td><td>DJEM High School</td><td>KSEEB</td><td>Apr 2017</td><td><span class="grade-badge">95.67%</span></td></tr>
+              </tbody>
+            </table>
+            <div style="padding:16px;">
+              <div class="carousel-container">
+                <div class="carousel-label"><span>// institute.photos[]</span><span class="carousel-counter" id="eduCounter">1 / 5</span></div>
+                <div class="carousel-viewport">
+                  <div class="carousel-track-new" id="eduTrack">
+                    <div class="carousel-slide"><img src="img/edu/nmamit.jpg"  alt="NMAMIT"/><div class="carousel-caption">NMAM Institute of Technology</div></div>
+                    <div class="carousel-slide"><img src="img/edu/nmamit1.jpg" alt="NMAMIT Campus"/><div class="carousel-caption">NMAMIT Campus</div></div>
+                    <div class="carousel-slide"><img src="img/edu/pu.jpg"      alt="Jain PU College"/><div class="carousel-caption">Jain PU College, Moodbidre</div></div>
+                    <div class="carousel-slide"><img src="img/edu/pu1.jpg"     alt="PU College"/><div class="carousel-caption">Jain PU College</div></div>
+                    <div class="carousel-slide"><img src="img/edu/DJEMS.jpeg"  alt="DJEMS"/><div class="carousel-caption">DJEM High School, Moodbidre</div></div>
+                  </div>
+                  <button class="carousel-btn prev" data-carousel="edu" data-direction="-1">&#8249;</button>
+                  <button class="carousel-btn next" data-carousel="edu" data-direction="1">&#8250;</button>
+                </div>
+                <div class="carousel-dots"   id="eduDots"></div>
+                <div class="carousel-thumbs" id="eduThumbs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line" style="margin-top:12px;"><span class="ln">42</span><span class="code">  <span class="kw">return</span><span class="pun">; </span><button class="return-btn" data-nav="home">↩ back to main()</button></span></div>
+      <div class="line"><span class="ln">43</span><span class="code"><span class="pun">}</span></span></div>
+    </section>
+
